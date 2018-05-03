@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
+import ActiveTab from './reducer_active_tab';
+import Projects from './reducer_projects';
 
 const rootReducer = combineReducers({
-  tabs: Tabs
+  projects: Projects,
   activeTab: ActiveTab
 });
 
