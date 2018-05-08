@@ -1,6 +1,6 @@
-export const PROJECT_SELECTED = 'PROJECT_SELECTED';
+import { PROJECT_SELECTED } from '../actions/index';
 
-export default function(state=null, action) {
+export default function(state = null, action) {
   switch(action.type) {
     case PROJECT_SELECTED:
       return action.payload;
