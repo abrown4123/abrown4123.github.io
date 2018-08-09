@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { tabSelect } from '../actions/index';
+import { tabSelect } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 
 class ProjectList extends Component {

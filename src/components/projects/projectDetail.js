@@ -16,6 +16,7 @@ class ProjectDetail extends Component {
     return (
       <div>
         <h1>{this.props.project.title}</h1>
+        <p>{this.props.project.data}</p>
       </div>
     );
   }
