@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import './master.css';
 
 class Hero extends Component {
-
   constructor(props) {
     super(props);
 
@@ -14,15 +14,14 @@ class Hero extends Component {
     this.cycleSubheading();
   }
 
-//Eventually the code below is going to animate between the description array values
-
+//the code below shows a new subheading every second. Values located in the description array
+// TODO: Add transition animation with css
   cycleSubheading() {
-    const self = this;
-    const time = setInterval(function () {
-      if (self.state.subheading_index > 0) {
+    const time = setInterval(() => {
+      if (this.state.subheading_index > 0) {
         clearInterval(time);
       }
-      self.setState({subheading_index: self.state.subheading_index+1});
+      this.setState({subheading_index: this.state.subheading_index+1});
     }, 1000);
   };
 
