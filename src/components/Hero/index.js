@@ -22,16 +22,18 @@ class Hero extends Component {
         clearInterval(time);
       }
       this.setState({subheading_index: this.state.subheading_index+1});
-    }, 1000);
+    }, 2000);
   };
 
   render() {
     const description =  ["Web Developer", "Nesquik Connoiseur", "Other Witty Thing"]
 
     return (
-      <div className="hero">
-        <h1>Anthony Brown</h1>
-        <h2>{description[this.state.subheading_index]}</h2>
+      <div className='hero'>
+        <div className='container'>
+          <h1>Anthony Brown</h1>
+          <h2>{description[this.state.subheading_index]}</h2>
+        </div>
       </div>
     );
   }
