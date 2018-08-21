@@ -4,7 +4,7 @@ export default class About extends Component {
   render() {
     return (
         <div>
-          <img src='#' alt='A picture of Anthony Brown' />
+          <img src='../../images/code.jpeg' alt='A picture of Anthony Brown' />
           <div>
             <p className='about-me'></p>
             <ul className='social-links'>

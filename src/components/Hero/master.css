@@ -27,18 +27,25 @@
 
 .hero-title{
   font-family: 'Playfair Display', serif;
-  font-size: 7rem;
-  margin: 0;
+  font-size: 4.375rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 1.1;
+  font-weight: 500;
 }
 
 .hero-divider {
   color: lightgray;
   width: 40%;
+  border: 0;
+  border-top: 1px solid #eee;
   margin: 0 auto;
 }
 
 .hero-subheading {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 200;
+  margin-top: 1.25rem;
   letter-spacing: 2px;
+  font-size: 1.875rem;
 }

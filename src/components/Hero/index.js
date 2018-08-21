@@ -22,18 +22,18 @@ class Hero extends Component {
         clearInterval(time);
       }
       this.setState({subheading_index: this.state.subheading_index+1});
-    }, 1500);
+    }, 1250);
   };
 
   render() {
-    const description =  ["Web Developer", "Nesquik Connoiseur", "Other Witty Thing"]
+    const description =  ["Problem Solver", "Nesquik Connoiseur", "Web Developer"]
 
     return (
       <div className='hero hero-parallax'>
         <div className='hero-overlay'>
             <h1 className='hero-title'>Anthony Brown</h1>
             <hr className='hero-divider' />
-            <h2 className='hero-subheading'>{description[this.state.subheading_index]}</h2>
+            <h2 className='hero-subheading'>{description[this.state.subheading_index].toUpperCase()}</h2>
         </div>
       </div>
     );

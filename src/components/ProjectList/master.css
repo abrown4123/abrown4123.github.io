@@ -1,0 +1,8 @@
+.project-list {
+  justify-content: space-around;
+  padding: 25px 0 0;
+}
+
+.active {
+  background-color: red;
+}

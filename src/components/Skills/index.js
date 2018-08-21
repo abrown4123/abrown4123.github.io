@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import './master.css';
 
 export default class Skills extends Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li><i></i>React</li>
-          <li><i></i>Redux</li>
-          <li><i></i>Webpack</li>
-          <li><i></i>ES6</li>
+      <div className='section'>
+        <h1 className='title'>Skills</h1>
+        <ul className='skills-list'>
+          <li><span className='node icon'></span></li>
+          <li><span className='react icon'></span></li>
+          <li><span className='redux icon'></span></li>
+          <li><span className='webpack icon'></span></li>
+          <li><span className='es6 icon'></span></li>
         </ul>
       </div>
     );

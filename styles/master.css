@@ -14,8 +14,18 @@ a, a:visited, a:focus, a:active, a:hover {
   color: #000000;
 }
 
-.container {
-  height: auto;
-  width: 800px;
-  margin: 0 auto;
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.section {
+  padding: 8vh;
+}
+
+.title {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Helvetica;
 }

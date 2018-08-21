@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 class ProjectDetail extends Component {
   render() {
     if (!this.props.project) {
       return (
         <div>
-          <h1>Select A Project</h1>
+          <h1>{this.props.projects[0].title}</h1>
+          <p>{this.props.projects[0].data}</p>
         </div>
       );
     }
@@ -24,6 +24,7 @@ class ProjectDetail extends Component {
 
 function mapStateToProps(state) {
   return {
+    projects: state.projects,
     project: state.activeTab
   };
 }

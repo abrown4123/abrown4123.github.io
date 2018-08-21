@@ -1,0 +1,21 @@
+.skills-list {
+  justify-content: space-around;
+  padding: 25px 0 0;
+}
+
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  display: block;
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+/* ICONS */
+.node { background-image: url('./../../../icons/node.png'); }
+.react { background-image: url('./../../../icons/react.png'); }
+.redux { background-image: url('../../../icons/redux.png'); }
+.webpack { background-image: url('../../../icons/webpack.png'); }
+.es6 { background-image: url('../../../icons/es6.jpg'); }
