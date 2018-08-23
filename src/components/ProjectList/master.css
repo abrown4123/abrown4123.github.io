@@ -1,8 +1,22 @@
 .project-list {
   justify-content: space-around;
-  padding: 25px 0 0;
+  width: 50vw;
+}
+
+.project-tab {
+  padding: 1rem;
+  /* outline removes Junk pixels left behind from the keyframe */
+  outline: 1px solid transparent;
+}
+
+@keyframes tab-select {
+  from { background-color: transparent; }
+  to   { background-color: blue; }
 }
 
 .active {
-  background-color: red;
+  animation: 1s tab-select;
+  animation-fill-mode: forwards;
+  border-radius: 5%;
+  color: #ffffff;
 }

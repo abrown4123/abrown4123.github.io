@@ -19,11 +19,10 @@ class ProjectList extends Component {
   }
 
   renderList() {
-
     return this.props.projects.map( project => {
       return (
         <li
-          className={this.state.active === project.title ? 'active' : ''}
+          className={`project-tab ${this.state.active === project.title ? "active" : ''}`}
           key={project.title}
           onClick={() => this.clicked(project)}>
           {project.title}</li>

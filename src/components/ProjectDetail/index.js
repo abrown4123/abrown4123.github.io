@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './master.css'
 
 class ProjectDetail extends Component {
+
   render() {
     if (!this.props.project) {
       return (
-        <div>
-          <h1>{this.props.projects[0].title}</h1>
-          <p>{this.props.projects[0].data}</p>
+        <div className='project-title'>
+          <h1>{this.props.firstProject.title}</h1>
+          <p>{this.props.firstProject.data}</p>
         </div>
       );
     }
@@ -15,7 +17,7 @@ class ProjectDetail extends Component {
 
     return (
       <div>
-        <h1>{this.props.project.title}</h1>
+        <h1 >{this.props.project.title}</h1>
         <p>{this.props.project.data}</p>
       </div>
     );
@@ -24,7 +26,7 @@ class ProjectDetail extends Component {
 
 function mapStateToProps(state) {
   return {
-    projects: state.projects,
+    firstProject: state.projects[0],
     project: state.activeTab
   };
 }
