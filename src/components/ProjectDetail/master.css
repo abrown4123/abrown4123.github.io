@@ -3,6 +3,23 @@
   to { left: 15px;}
 }
 
+.project-details {
+  display: flex;
+  padding: 1rem
+}
+
+.project-preview {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .project-title {
   animation: 1s fadein;
+  text-align: center;
 }

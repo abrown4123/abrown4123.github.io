@@ -9,14 +9,18 @@
   outline: 1px solid transparent;
 }
 
+.project-tab:hover {
+  cursor: pointer;
+}
+
 @keyframes tab-select {
-  from { background-color: transparent; }
-  to   { background-color: blue; }
+  from { border-bottom: none; }
+  to   { border-bottom: 2px solid #ffffff; }
 }
 
 .active {
-  animation: 1s tab-select;
+  /* animation: 1s tab-select; */
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
   animation-fill-mode: forwards;
-  border-radius: 5%;
-  color: #ffffff;
 }
