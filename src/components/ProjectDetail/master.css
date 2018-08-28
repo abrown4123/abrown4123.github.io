@@ -1,25 +1,49 @@
-@@keyframes fadein {
+/* @@keyframes fadein {
   from {left: 0;}
   to { left: 15px;}
-}
+} */
 
-.project-details {
+.project-container {
+  align-items: center;
+  height: 80vh;
   display: flex;
-  padding: 1rem
+  padding: 2rem;
+  background-color: #063852;
+  color: #ffffff;
 }
 
 .project-preview {
   width: 50%;
   height: auto;
   text-align: center;
+  margin: auto;
 }
 
 .project-img {
+  vertical-align: middle;
   width: 100%;
   border-radius: 10px;
 }
 
-.project-title {
-  animation: 1s fadein;
+.project-details {
   text-align: center;
+  width: 45vw;
+  height: 5vh;
+  margin: 0 auto;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: .5rem 2rem;
+  border: 2px solid #ffffff;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #063852;
 }

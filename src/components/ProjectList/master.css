@@ -1,12 +1,13 @@
 .project-list {
-  justify-content: space-around;
   width: 50vw;
+  margin: 0;
 }
 
 .project-tab {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   /* outline removes Junk pixels left behind from the keyframe */
   outline: 1px solid transparent;
+  color: #666666;
 }
 
 .project-tab:hover {
@@ -15,12 +16,15 @@
 
 @keyframes tab-select {
   from { border-bottom: none; }
-  to   { border-bottom: 2px solid #ffffff; }
+  to   {
+    background-color: #063852;
+  }
 }
 
 .active {
-  /* animation: 1s tab-select; */
-  border-bottom: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
+  animation: .5s tab-select;
   animation-fill-mode: forwards;
+  color: #ffffff;
+  /* background-color: #063852; */
+  border-bottom: none;
 }

@@ -8,15 +8,18 @@ class ProjectDetail extends Component {
   render() {
     if (!this.props.project) {
       return (
-        <div className='project-details'>
+        <div className='project-container'>
           <div className='project-preview'>
-            <img className='project-img' src={this.props.firstProject.image} alt={this.props.firstProject.alt}/>
-            <a>Live</a>
-            <a>Code</a>
-          </div>
-          <div>
             <h1>{this.props.firstProject.title}</h1>
+            <img className='project-img' src={this.props.firstProject.image} alt={this.props.firstProject.alt}/>
+          </div>
+          <div className='project-details'>
             <p>{this.props.firstProject.detail}</p>
+            <p className='project-tech'> Technology Used: {this.props.firstProject.tech}</p>
+            <div className='project-buttons'>
+              <a className='live btn' href={this.props.firstProject.livelink}>Live</a>
+              <a className='code btn' href={this.props.firstProject.codelink}>Code</a>
+            </div>
           </div>
         </div>
       );
@@ -24,15 +27,18 @@ class ProjectDetail extends Component {
 
 
     return (
-      <div className='project-details'>
+      <div className='project-container'>
         <div className='project-preview'>
+          <h1 >{this.props.project.title}</h1>
           <img className='project-img' src={this.props.project.image} alt={this.props.project.alt}/>
-          <a>Live</a>
-          <a>Code</a>
         </div>
-        <div>
-          <h1>{this.props.project.title}</h1>
+        <div className='project-details'>
           <p>{this.props.project.detail}</p>
+          <p className='project-tech'> Technology Used: {this.props.project.tech}</p>
+          <div className='project-buttons'>
+            <a className='live btn'>Live</a>
+            <a className='code btn'>Code</a>
+          </div>
         </div>
       </div>
     );

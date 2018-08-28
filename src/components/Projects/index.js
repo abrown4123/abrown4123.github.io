@@ -6,11 +6,9 @@ import './master.css';
 export default class Projects extends Component {
   render() {
     return (
-      <div className='projects'>
-        <div className='section'>
-          <ProjectList />
-          <ProjectDetail />
-        </div>
+      <div>
+        <ProjectList />
+        <ProjectDetail />
       </div>
     );
   }
