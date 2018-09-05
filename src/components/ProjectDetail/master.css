@@ -41,6 +41,7 @@
   padding: .5rem 2rem;
   border: 2px solid #ffffff;
   margin: 1rem;
+  transition: 0.1s background-color linear, 0.1s color linear;
 }
 
 .btn:hover {

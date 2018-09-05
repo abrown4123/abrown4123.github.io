@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.about-map {
+  display: block;
+  -moz-box-shadow:    3px 3px 10px 1px black;
+  -webkit-box-shadow: 3px 3px 10px 1px black;
+  box-shadow:         3px 3px 10px 1px black;
+  }
+
+.about-headshot {
+  border-radius: 5%;
+  width: 300px;
+  height: auto;
+  -moz-box-shadow:    3px 3px 10px 1px black;
+  -webkit-box-shadow: 3px 3px 10px 1px black;
+  box-shadow:         3px 3px 10px 1px black;
+}
+
+.about-links a{
+  color: #666666;
+}
