@@ -1,10 +1,13 @@
 .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   height: 80vh;
   width: 100%;
+}
+
+.about-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-map {
@@ -18,11 +21,17 @@
   border-radius: 5%;
   width: 300px;
   height: auto;
+  margin: 0 10rem;
   -moz-box-shadow:    3px 3px 10px 1px black;
   -webkit-box-shadow: 3px 3px 10px 1px black;
   box-shadow:         3px 3px 10px 1px black;
 }
 
+.about-links {
+  margin-top: 1.5rem;
+}
+
 .about-links a{
+  margin: 1rem;
   color: #666666;
 }
