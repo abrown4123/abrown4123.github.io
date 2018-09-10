@@ -14,7 +14,7 @@ class ProjectDetail extends Component {
             <img className='project-img' src={this.props.firstProject.image} alt={this.props.firstProject.alt}/>
           </div>
           <div className='project-details'>
-            <p>{this.props.firstProject.detail}</p>
+            <p className='project-description'>{this.props.firstProject.detail}</p>
             <p className='project-tech'> Technology Used: {this.props.firstProject.tech}</p>
             <div className='project-buttons'>
               <a className='live btn' href={this.props.firstProject.livelink}>Live</a>
@@ -29,12 +29,12 @@ class ProjectDetail extends Component {
     return (
       <div className='project-container'>
         <div className='project-preview'>
-          <h1 >{this.props.project.title}</h1>
+          <h1 className='project-title'>{this.props.project.title}</h1>
           <img className='project-img' src={this.props.project.image} alt={this.props.project.alt}/>
         </div>
         <div className='project-details'>
-          <p>{this.props.project.detail}</p>
-          <p className='project-tech'> Technology Used: {this.props.project.tech}</p>
+          <p className='project-description'>{this.props.project.detail}</p>
+          <p className='project-tech'><span className='project-tech-used'>Technology Used:</span> {this.props.project.tech}</p>
           <div className='project-buttons'>
             <a className='live btn'>Live</a>
             <a className='code btn'>Code</a>

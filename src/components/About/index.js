@@ -8,7 +8,7 @@ export default class About extends Component {
           <h1>Contact</h1>
           <div className='about-body'>
             <div className='about-map'>
-              <iframe width="450" height="350" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Austin%2C%20TX&key=AIzaSyCT5elF7cPOpiuS8-hmm5AfMXytsCd6wag" allowFullScreen></iframe>
+              <iframe width="100%" height="350" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Austin%2C%20TX&key=AIzaSyCT5elF7cPOpiuS8-hmm5AfMXytsCd6wag" allowFullScreen></iframe>
             </div>
             <div className='about-info'>
               <img className='about-headshot' src='../../../images/me.png' />
