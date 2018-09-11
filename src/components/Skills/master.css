@@ -1,3 +1,7 @@
+.skills-section {
+  padding: 15vh 8vh;
+}
+
 .skills-list {
   justify-content: space-around;
   padding: 25px 0;
@@ -19,3 +23,18 @@
 .redux { background-image: url('../../../icons/redux.png'); }
 .webpack { background-image: url('../../../icons/webpack.png'); }
 .es6 { background-image: url('../../../icons/es6.jpg'); }
+
+
+@media (min-width: 1px) and (max-width: 575px) {
+  .skills-section {
+    padding: 15vh 5vh;
+  }
+
+  .skills-list {
+    justify-content: space-between;
+  }
+
+  .icon {
+    padding: 1.5rem;
+  }
+}

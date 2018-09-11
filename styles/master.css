@@ -19,10 +19,6 @@ ul {
   display: flex;
 }
 
-.section {
-  padding: 15vh 8vh;
-}
-
 .title {
   margin: 1rem 0;
   text-align: center;

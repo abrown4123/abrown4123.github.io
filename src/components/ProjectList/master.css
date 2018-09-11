@@ -11,7 +11,7 @@
 
 .project-tab {
   padding: 1rem 1.5rem;
-  /* outline removes Junk pixels left behind from the keyframe */
+  /* outline removes Junk pixels left behind from the keyframe animation*/
   outline: 1px solid transparent;
   color: #666666;
 }
@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 515px) {
+@media (min-width: 1px) and (max-width: 515px) {
   .project-tab {
     padding: 1rem;
     font-size: .8rem;

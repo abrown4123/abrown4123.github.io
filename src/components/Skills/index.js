@@ -4,7 +4,7 @@ import './master.css';
 export default class Skills extends Component {
   render() {
     return (
-      <div className='section'>
+      <div className='skills-section'>
         <h1 className='title'>Skills</h1>
         <ul className='skills-list'>
           <li><span className='node icon'></span></li>

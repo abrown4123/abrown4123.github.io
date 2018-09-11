@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
         <div className='about'>
-          <h1>Contact</h1>
+          <h1 className='title'>Contact</h1>
           <div className='about-body'>
             <div className='about-map'>
               <iframe width="100%" height="350" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Austin%2C%20TX&key=AIzaSyCT5elF7cPOpiuS8-hmm5AfMXytsCd6wag" allowFullScreen></iframe>

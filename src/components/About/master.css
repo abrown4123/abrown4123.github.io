@@ -36,9 +36,14 @@
 .about-links a{
   margin: 1rem;
   color: #666666;
+  transition: .1s color linear;
 }
 
-@media (min-width: 1px) and (max-width: 905px) {
+.about-links a:hover {
+  color: #063852;
+}
+
+@media (min-width: 1px) and (max-width: 950px) {
   .about-body {
     flex-direction: column;
   }
