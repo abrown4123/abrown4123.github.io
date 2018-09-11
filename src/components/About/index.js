@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './master.css';
 import MyImage from '../../../images/me.png';
+import Resume from '../../../images/AnthonyBrownResume2018.pdf';
 
 export default class About extends Component {
   render() {
@@ -19,7 +20,7 @@ export default class About extends Component {
                 <a href="mailto:abrown4123@gmail.com" target="_blank"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
                 <a href="https://stackoverflow.com/users/story/7509227" target="_blank"><i className="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a>
                 <a href="https://twitter.com/TonyTheTinker"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="images/Anthony%20Brown%20Resume%202018.pdf" target="_blank"><i className="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>
+                <a href={Resume} target="_blank"><i className="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
