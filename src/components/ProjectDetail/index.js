@@ -36,8 +36,8 @@ class ProjectDetail extends Component {
           <p className='project-description'>{this.props.project.detail}</p>
           <p className='project-tech'><span className='project-tech-used'>Technology Used:</span> {this.props.project.tech}</p>
           <div className='project-buttons'>
-            <a className='live btn'>Live</a>
-            <a className='code btn'>Code</a>
+            <a className='live btn' href={this.props.project.livelink}>Live</a>
+            <a className='code btn' href={this.props.project.codelink}>Code</a>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ class Hero extends Component {
   };
 
   render() {
-    const description =  ["Problem Solver", "Nesquik Connoiseur", "Web Developer"]
+    const description =  ["Problem Solver", "Application Builder", "Web Developer"]
 
     return (
       <div className='hero hero-parallax'>

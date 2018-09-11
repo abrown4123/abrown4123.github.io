@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: path.resolve(__dirname + '/dist'),
+    publicPath: './dist/',
     filename: 'bundle.js'
   },
   module: {
@@ -14,7 +16,10 @@ module.exports = {
         exclude:/node_modules/,
         use: ['babel-loader']
       },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      },
       {
         test: /\.(png|svg|jp(e*)g|gif)$/,
         use: [

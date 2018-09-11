@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './master.css';
+import MyImage from '../../../images/me.png';
 
 export default class About extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class About extends Component {
               <iframe width="100%" height="350" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Austin%2C%20TX&key=AIzaSyCT5elF7cPOpiuS8-hmm5AfMXytsCd6wag" allowFullScreen></iframe>
             </div>
             <div className='about-info'>
-              <img className='about-headshot' src='../../../images/me.png' />
+              <img className='about-headshot' src={MyImage} />
               <div className="about-links">
                 <a href="https://www.linkedin.com/in/abrown4123/" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 <a href="https://github.com/abrown4123" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
