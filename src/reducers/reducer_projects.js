@@ -17,7 +17,7 @@ export default function() {
     },
     {
       title: 'Wikipedia Viewer',
-      detail:'Wikipedia Viewer utilizes the MediaWiki API to return the top ten encyclopedia article\'s associated with the user\'s query. It also has a random article feature which retrieves a random article from the database and takes the user to that page.',
+      detail:'Wikipedia Viewer utilizes the MediaWiki API to return the top ten Wikipedia article\'s associated with the user\'s query. It also has a random article feature which retrieves a random article from the database and takes the user to that page.',
       image: Wiki,
       alt: 'Picture of a Wikipedia Search webpage',
       tech: 'HTML, CSS, Vanilla JS, MediaWiki API',
@@ -26,7 +26,7 @@ export default function() {
     },
     {
       title: 'Weather App',
-      detail:'The Weather App uses the Open Weather Map API to display the user\'s local forecast. Users are able to toggle between Celsius and Fahrenheit display of the temperature and this App\'s background changes to reflect the user\'s forecast',
+      detail:'The Weather App uses the Open Weather Map API to display the user\'s local forecast. Users are able to toggle the temperature between Celsius and Fahrenheit and the App\'s background changes to reflect the user\'s forecast',
       image: Weather,
       alt: 'Picture of an App that displays weather conditions',
       tech: 'HTML, CSS, Vanilla JS, Open Weather API',
@@ -35,7 +35,7 @@ export default function() {
     },
     {
       title: 'This Website',
-      detail:'This is my porfolio page. Feel free to use the code button below to see the code used behind the scenes.',
+      detail:'This is my portfolio page. Feel free to use the code button below to see the code used behind the scenes.',
       image: Portfolio,
       alt: 'Picture of this website',
       tech: 'React, Redux, Webpack, ES6, Babel',
