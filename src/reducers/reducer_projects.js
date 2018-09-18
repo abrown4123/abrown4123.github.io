@@ -7,7 +7,7 @@ import Portfolio from '../../images/portfolio.png';
 export default function() {
   return [
     {
-      title: 'NachoCritique',
+      title: 'Nacho Critique',
       detail:"Nacho Critique is a full stack app that utilizes NodeJS, Express, MongoDB and Passport to allow users create Nacho Critique accounts to rate Nachos. Users have the ability to log in and share their opinions of Nachos from different restaurants and edit reviews they've previously made. Users can also add pictures and their own critiques of Nachos they've tried.",
       tech: 'Node, Express, MongoDB, EJS',
       image: Nacho,

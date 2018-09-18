@@ -9,7 +9,7 @@ class ProjectList extends Component {
     super(props)
 
     this.state = {
-      active: 'NachoCritique'
+      active: 'Nacho Critique'
     }
   }
 
