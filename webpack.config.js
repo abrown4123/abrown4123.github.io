@@ -22,6 +22,14 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jp(e*)g|gif|pdf)$/,
+        loader: 'image-webpack-loader',
+        // Specify enforce: 'pre' to apply the loader
+        // before url-loader/svg-url-loader
+        // and not duplicate it in rules with them
+        enforce: 'pre'
+      },
+      {
+        test: /\.(png|svg|jp(e*)g|gif|pdf)$/,
         use: [
           'file-loader'
         ]

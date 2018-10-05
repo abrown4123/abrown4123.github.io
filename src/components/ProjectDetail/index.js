@@ -1,43 +1,45 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './master.css'
+import './master.css';
+
 
 class ProjectDetail extends Component {
 
   // TODO: Make this a reusable dummy componet that returns identical JSX.
   render() {
     if (!this.props.project) {
+      const { firstProject } = this.props
       return (
         <div className='project-container'>
           <div className='project-preview'>
-            <h1>{this.props.firstProject.title}</h1>
-            <img className='project-img' src={this.props.firstProject.image} alt={this.props.firstProject.alt}/>
+            <h1>{firstProject.title}</h1>
+            <img className='project-img' src={firstProject.image} alt={firstProject.alt}/>
           </div>
           <div className='project-details'>
-            <p className='project-description'>{this.props.firstProject.detail}</p>
-            <p className='project-tech'> Technology Used: {this.props.firstProject.tech}</p>
+            <p className='project-description'>{firstProject.detail}</p>
+            <p className='project-tech'> Technology Used: {firstProject.tech}</p>
             <div className='project-buttons'>
-              <a className='live btn' href={this.props.firstProject.livelink}>Live</a>
-              <a className='code btn' href={this.props.firstProject.codelink}>Code</a>
+              <a className='live btn' href={firstProject.livelink}>Live</a>
+              <a className='code btn' href={firstProject.codelink}>Code</a>
             </div>
           </div>
         </div>
       );
     }
 
-
+    const { project } = this.props
     return (
       <div className='project-container'>
         <div className='project-preview'>
-          <h1 className='project-title'>{this.props.project.title}</h1>
-          <img className='project-img' src={this.props.project.image} alt={this.props.project.alt}/>
+          <h1 className='project-title'>{project.title}</h1>
+          <img className='project-img' src={project.image} alt={project.alt}/>
         </div>
         <div className='project-details'>
-          <p className='project-description'>{this.props.project.detail}</p>
-          <p className='project-tech'><span className='project-tech-used'>Technology Used:</span> {this.props.project.tech}</p>
+          <p className='project-description'>{project.detail}</p>
+          <p className='project-tech'><span className='project-tech-used'>Technology Used:</span> {project.tech}</p>
           <div className='project-buttons'>
-            <a className='live btn' href={this.props.project.livelink}>Live</a>
-            <a className='code btn' href={this.props.project.codelink}>Code</a>
+            <a className='live btn' href={project.livelink}>Live</a>
+            <a className='code btn' href={project.codelink}>Code</a>
           </div>
         </div>
       </div>
