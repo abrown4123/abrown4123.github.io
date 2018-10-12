@@ -6,16 +6,21 @@
 }
 
 .about-body{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .about-map {
   max-width: 450px;
   width: 100%;
   display: block;
-  -moz-box-shadow:    3px 3px 10px 1px black;
   -webkit-box-shadow: 3px 3px 10px 1px black;
   box-shadow:         3px 3px 10px 1px black;
   }
@@ -24,7 +29,6 @@
   border-radius: 5%;
   width: 300px;
   height: auto;
-  -moz-box-shadow:    3px 3px 10px 1px black;
   -webkit-box-shadow: 3px 3px 10px 1px black;
   box-shadow:         3px 3px 10px 1px black;
 }
@@ -36,6 +40,7 @@
 .about-links a{
   margin: 1rem;
   color: #666666;
+  -webkit-transition: .1s color linear;
   transition: .1s color linear;
 }
 
@@ -43,9 +48,19 @@
   color: #063852;
 }
 
+/* Microsoft Edge 17+ */
+@supports (-ms-ime-align:auto) and (font-variation-settings:normal) {
+  .about-body {
+    justify-content: space-around;
+    }
+  }
+
 @media (min-width: 1px) and (max-width: 950px) {
   .about-body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .about-info {

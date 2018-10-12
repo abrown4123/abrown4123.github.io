@@ -3,7 +3,8 @@
 }
 
 .skills-list {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 25px 0;
 }
 
@@ -31,7 +32,9 @@
   }
 
   .skills-list {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .icon {

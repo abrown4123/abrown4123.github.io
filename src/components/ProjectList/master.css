@@ -1,3 +1,8 @@
+@-webkit-keyframes tab-select {
+  from { border-bottom: none; }
+  to   { background-color: #063852; }
+}
+
 @keyframes tab-select {
   from { border-bottom: none; }
   to   { background-color: #063852; }
@@ -5,7 +10,9 @@
 
 .project-list {
   margin: 0;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: center;
 }
 
@@ -21,8 +28,10 @@
 }
 
 .active {
-  animation: .5s tab-select;
-  animation-fill-mode: forwards;
+  -webkit-animation: .5s tab-select;
+          animation: .5s tab-select;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #ffffff;
   border-bottom: none;
 }
